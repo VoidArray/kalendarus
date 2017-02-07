@@ -1,0 +1,716 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Календарус – события на Урале
+X-WR-TIMEZONE:Asia/Yekaterinburg
+X-WR-CALDESC:Самый полный календарь мероприятий по интернет-предприниматель
+ ству на Уральской земле
+BEGIN:VTIMEZONE
+TZID:Asia/Yekaterinburg
+X-LIC-LOCATION:Asia/Yekaterinburg
+BEGIN:STANDARD
+TZOFFSETFROM:+0500
+TZOFFSETTO:+0500
+TZNAME:+05
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:c3bc49kq9ubnjpt18rvea00dvo@google.com
+CREATED:20170205T211923Z
+DESCRIPTION:2-ой день - для тех\, кто начинает свой путь в направлении Умны
+ х домов (электрики\, инсталляторы и так далее) Регистрация: https://docs.go
+ ogle.com/forms/d/e/1FAIpQLSdeSxZpBiqwFz2AoDcfSsSgJYLGmuEb95Nc6US6o4sulzGwSg
+ /viewform?c=0&w=1
+LAST-MODIFIED:20170205T211923Z
+LOCATION:Татищева\, 86
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:iRidium mobile: Smart home конференция
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:e4g4qj1elbbqi50c2su0gl8f0o@google.com
+CREATED:20170205T211911Z
+DESCRIPTION:2-ой день - для тех\, кто начинает свой путь в направлении Умны
+ х домов (электрики\, инсталляторы и так далее) Регистрация: https://docs.go
+ ogle.com/forms/d/e/1FAIpQLSdeSxZpBiqwFz2AoDcfSsSgJYLGmuEb95Nc6US6o4sulzGwSg
+ /viewform?c=0&w=1
+LAST-MODIFIED:20170205T211911Z
+LOCATION:Татищева\, 86
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:iRidium mobile: Smart home конференция
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:novs0tqafhiu4mfmamkdursvqs@google.com
+CREATED:20170205T211910Z
+DESCRIPTION:1-ый день - для тех\, кто в теме АСУЗ уже давно и надолго (инте
+ граторы и инсталляторы систем Умный дом) Регистрация: https://docs.google.c
+ om/forms/d/e/1FAIpQLSdeSxZpBiqwFz2AoDcfSsSgJYLGmuEb95Nc6US6o4sulzGwSg/viewf
+ orm?c=0&w=1
+LAST-MODIFIED:20170205T211910Z
+LOCATION:Татищева\, 86
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:iRidium mobile: Smart home конференция
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:km75i7eeh43jjtf1vnd5sqrglo@google.com
+CREATED:20170205T211903Z
+DESCRIPTION:Уникальная программа\, которая позволяет за два дня под руковод
+ ством опытных бизнес-тренеров создать собственный стартап. Регистрация: htt
+ p://synergystartup.ru/
+LAST-MODIFIED:20170205T211904Z
+LOCATION:Арамиль
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Синергия: Стартап-завод
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:g35v463umpriu5dsvdhhehfrog@google.com
+CREATED:20170205T211902Z
+DESCRIPTION:Уникальная программа\, которая позволяет за два дня под руковод
+ ством опытных бизнес-тренеров создать собственный стартап. Регистрация: htt
+ p://synergystartup.ru/
+LAST-MODIFIED:20170205T211903Z
+LOCATION:Арамиль
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Синергия: Стартап-завод
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:omiatp0neb8k6hnh3695pdnut0@google.com
+CREATED:20170205T211902Z
+DESCRIPTION:Уникальная программа\, которая позволяет за два дня под руковод
+ ством опытных бизнес-тренеров создать собственный стартап. Регистрация: htt
+ p://synergystartup.ru/
+LAST-MODIFIED:20170205T211902Z
+LOCATION:Арамиль
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Синергия: Стартап-завод
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:vbg82bo4npnf80h746ef5qenc8@google.com
+CREATED:20170205T211851Z
+DESCRIPTION:Старт 7 сезона Акселератора УрФУ! Лучшие проектные команды смог
+ ут пройти отбор и "прокачать" свою идею на все 100%. Регистрация: https://v
+ k.com/startupurfu
+LAST-MODIFIED:20170205T211851Z
+LOCATION:Конструкторов\,5
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Акселератор УрФУ: открытие
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:dcktbq5n4djnft575ca7kbhf6g@google.com
+CREATED:20170205T211843Z
+DESCRIPTION:Старт 7 сезона Акселератора УрФУ! Лучшие проектные команды смог
+ ут пройти отбор и "прокачать" свою идею на все 100%. Регистрация: https://v
+ k.com/startupurfu
+LAST-MODIFIED:20170205T211843Z
+LOCATION:Конструкторов\,5
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Акселератор УрФУ: открытие
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:002jo5brdpa5bc862fscsvpeps@google.com
+CREATED:20170205T211825Z
+DESCRIPTION:
+LAST-MODIFIED:20170205T211825Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:j97o06l853ftg14ogvnao602vg@google.com
+CREATED:20170205T211824Z
+DESCRIPTION:Старт 7 сезона Акселератора УрФУ! Лучшие проектные команды смог
+ ут пройти отбор и "прокачать" свою идею на все 100%. Регистрация: https://v
+ k.com/startupurfu
+LAST-MODIFIED:20170205T211824Z
+LOCATION:Конструкторов\,5
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Акселератор УрФУ: открытие
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:q5sdqdjlfjnhte0l48r7ifhj5g@google.com
+CREATED:20170205T211824Z
+DESCRIPTION:
+LAST-MODIFIED:20170205T211824Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:l37jdn15l5j214bsjiab0b0n44@google.com
+CREATED:20170205T211823Z
+DESCRIPTION:
+LAST-MODIFIED:20170205T211823Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:rad6uc5g6ho2o73r4r2qql2g3s@google.com
+CREATED:20170205T211822Z
+DESCRIPTION: Регистрация: http://ekbiznes.ru/events/?id=1327
+LAST-MODIFIED:20170205T211822Z
+LOCATION:ЕЦРП\, Пушкина\, 9А
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ЕЦРП: Серия мастер-классов по переговорам
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:mj6roebgmkvav3i4jd4b1af46s@google.com
+CREATED:20170205T211751Z
+DESCRIPTION:Мастер-класс от Бауыржана Торланова. В его послужном списке упр
+ авляющие должности в Х5 Ритейл Групп и других крупных компаниях Регистрация
+ : http://ag7og3os.plp7.ru/
+LAST-MODIFIED:20170205T211751Z
+LOCATION:Визави\, Татищева\, 86
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Деловая Россия: Мастер-класс "Заведение SKU"
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:ugqanl2rljjqhmmbj3sqpe5hb4@google.com
+CREATED:20170205T211730Z
+DESCRIPTION:Навыки продаж – один из главных активов вашего бизнеса. Уровень
+  развития навыков продаж определяет объем выручки в конце дня.  Регистрация
+ : http://ekbiznes.ru/events/?id=1333
+LAST-MODIFIED:20170205T211730Z
+LOCATION:ЕЦРП\, Пушкина\, 9А
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ЕЦРП: Консультационный марафон эффективных продаж
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:82b99i1pmr0ag57k8i19tok1js@google.com
+CREATED:20170205T211729Z
+DESCRIPTION:Разъяснение работы налоговой службы\, дает изменения и тонкости
+  действующего законодательства Регистрация: http://taxaudit.bshk.ru/
+LAST-MODIFIED:20170205T211729Z
+LOCATION:Angelo\, Бахчиванджи\, 55А
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Деловая Россия: Налоговый семинар совместно с АГ «Капитал»
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:dmark2hbtctch2kmcb6hjbu210@google.com
+CREATED:20170205T211652Z
+DESCRIPTION:Треннинг на тему "Бизнес аналитика" Регистрация: https://www.fa
+ cebook.com/groups/1270771199631680/?fref=ts
+LAST-MODIFIED:20170205T211652Z
+LOCATION:Антона Валека\, 13
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Деловая Россия: Встреча Английского клуба GlobUS
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:vjpa2tvf1d8ellji41m37imlr0@google.com
+CREATED:20170205T211652Z
+DESCRIPTION:Разъяснение работы налоговой службы\, дает изменения и тонкости
+  действующего законодательства Регистрация: http://taxaudit.bshk.ru/
+LAST-MODIFIED:20170205T211652Z
+LOCATION:Angelo\, Бахчиванджи\, 55А
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Деловая Россия: Налоговый семинар совместно с АГ «Капитал»
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:1km1g63lgdmo7p07giv4jjhffo@google.com
+CREATED:20170205T211609Z
+DESCRIPTION:На  открытом бизнес-разборе мы найдем точки роста вашего бизнес
+ а и внедрим их прямо на мероприятии\, получая мгновенный результат. Регистр
+ ация: http://ekbiznes.ru/events/?id=1325
+LAST-MODIFIED:20170205T211609Z
+LOCATION:ЕЦРП\, Пушкина\, 9А
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ЕЦРП: Открытый интерактивный бизнес-разбор
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:19700101T000000Z
+DTSTAMP:20170207T043423Z
+UID:0dephbl7fu2t2fa31fdvf86l18@google.com
+CREATED:20170205T211020Z
+DESCRIPTION:На  открытом бизнес-разборе мы найдем точки роста вашего бизнес
+ а и внедрим их прямо на мероприятии\, получая мгновенный результат. Регистр
+ ация: http://ekbiznes.ru/events/?id=1325
+LAST-MODIFIED:20170205T211020Z
+LOCATION:ЕЦРП\, Пушкина\, 9А
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ЕЦРП: Открытый интерактивный бизнес-разбор
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170311T050000Z
+DTEND:20170311T133000Z
+DTSTAMP:20170207T043423Z
+UID:1sjfnd7danpnq351es94unl65k@google.com
+CREATED:20170202T111029Z
+DESCRIPTION:Крупнейшая ежегодная конференция для стартапов\, инвесторов и и
+ нтернет-предпринимателей на Урале. Регистрация: https://goo.gl/uCUaoR 
+LAST-MODIFIED:20170202T111029Z
+LOCATION:Ельцин Центр\, Ельцина\, 3
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ФРИИ: Ekb Startup Day
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170215T130000Z
+DTEND:20170215T150000Z
+DTSTAMP:20170207T043423Z
+UID:76tsnj7qq409nds0k3nnrft710@google.com
+CREATED:20170131T100207Z
+DESCRIPTION:Разговариваем про юридические аспекты запуска и работы стартапо
+ в. Кейсы\, документы и лучшие практики. Роман Фадеев – управляющий партнер 
+ юридической компании «Legal Jazz». Регистрация: https://goo.gl/tjj0rO
+LAST-MODIFIED:20170131T100207Z
+LOCATION:ЕЦРП\, Пушкина\, 9А
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ФРИИ: Мастер-класс "Правовые аспекты стартапа"
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170222T130000Z
+DTEND:20170222T150000Z
+DTSTAMP:20170207T043423Z
+UID:5evbo6tc498b0bme3uiq15an10@google.com
+CREATED:20170129T180216Z
+DESCRIPTION:Не упусти шанс получить обратную связь от опытных игроков рынка
+ ! 26 января в 18:00 – очередное заседание Клуба. Менторы рассмотрят ИТ-прое
+ кты\, дадут советы и поделятся опытом. Регистрация: https://goo.gl/hjrgib
+LAST-MODIFIED:20170129T180216Z
+LOCATION:ЕЦРП\, Пушкина\, 9А
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ФРИИ: Клуб менторов в Екатеринбурге
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:19700101T050000
+DTEND;TZID=Asia/Yekaterinburg:19700101T050000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:s0kas2df101pli5udk2csiaqg0@google.com
+CREATED:20170121T073247Z
+DESCRIPTION:
+LAST-MODIFIED:20170124T201825Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:NONE
+TRIGGER;VALUE=DATE-TIME:19760401T005545Z
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:19700101T050000
+DTEND;TZID=Asia/Yekaterinburg:19700101T050000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:7nj1lnu618ki4pm16dagi1ghn8@google.com
+CREATED:20170121T073246Z
+DESCRIPTION:
+LAST-MODIFIED:20170124T201820Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:NONE
+TRIGGER;VALUE=DATE-TIME:19760401T005545Z
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:19700101T050000
+DTEND;TZID=Asia/Yekaterinburg:19700101T050000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:33mrf3g9esl95hnjd1jem25ovg@google.com
+CREATED:20170121T073246Z
+DESCRIPTION:
+LAST-MODIFIED:20170124T201805Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:NONE
+TRIGGER;VALUE=DATE-TIME:19760401T005545Z
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:19700101T050000
+DTEND;TZID=Asia/Yekaterinburg:19700101T050000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:40t6v7ulmskuib8usl0254t32c@google.com
+CREATED:20170121T153305Z
+DESCRIPTION:
+LAST-MODIFIED:20170124T135043Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:19700101T050000
+DTEND;TZID=Asia/Yekaterinburg:19700101T050000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:76ug51tu8g412818qaimvjsb1g@google.com
+CREATED:20170121T074008Z
+DESCRIPTION:
+LAST-MODIFIED:20170123T122245Z
+LOCATION:Антона Валека\, 13
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Деловая Россия: Come*unity
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170207T150000Z
+DTEND:20170207T170000Z
+DTSTAMP:20170207T043423Z
+UID:0j29v0v31c7ernvce9b61ekb98@google.com
+CREATED:20170123T122235Z
+DESCRIPTION:Business Episode - это уникальный проект формата "story-telling
+ " об опыте и эмоциях в бизнесе. Регистрация: https://vk.com/business_episod
+ e
+LAST-MODIFIED:20170123T122236Z
+LOCATION:Ever Jazz\, Тургенева\, 22
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Деловая Россия: Business Episode
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:20170207T183000
+DTEND;TZID=Asia/Yekaterinburg:20170207T203000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:umtqtujt84rperv6igrheaip70@google.com
+CREATED:20170121T153309Z
+DESCRIPTION:Развиваете ИТ/Интернет бизнес? Научились привлекать клиентов на
+  потоке? Самое время проанализировать результат и скорректировать стратегию
+  детальнейшего развития компании. Регистрация: https://goo.gl/vurX6Z
+LAST-MODIFIED:20170123T122224Z
+LOCATION:Webinar.ru
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:ФРИИ: Вебинар по оценке стоимости стартапа (Дмитрий Калаев) 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:20170127T190000
+DTEND;TZID=Asia/Yekaterinburg:20170127T210000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:2jpaifa7vrvgo239fgvcl56ffg@google.com
+CREATED:20170121T153523Z
+DESCRIPTION:Мастер-класс «Идеальная команда: утопия или реальность?» от при
+ глашенного спикера из Москвы Ильи Родина Регистрация: https://iturfu.timepa
+ d.ru/event/433620/
+LAST-MODIFIED:20170121T153538Z
+LOCATION:Комсомольская\,61
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Акселератор УрФУ: Мастер-класс
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170202T060000Z
+DTEND:20170202T100000Z
+DTSTAMP:20170207T043423Z
+UID:n524750hdjgor5eit6fif2l6ug@google.com
+CREATED:20170121T153525Z
+DESCRIPTION:Третья всероссийская Олимпиада по истории российского предприни
+ мательства. Региональный и федеральный этап Регистрация: http://deloros-ura
+ l.ru/novosti/
+LAST-MODIFIED:20170121T153525Z
+LOCATION:Антона Валека\, 13
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Деловая Россия: Олимпиада по предпринимательству
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:20170202T093000
+DTEND;TZID=Asia/Yekaterinburg:20170202T160000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:jk8ao05ma5s6dbdalughsn0f04@google.com
+CREATED:20170121T153306Z
+DESCRIPTION:Результатом участия для Вас станет понимание инструментов и рес
+ урсов\, которые Вы можете использовать при выходе на зарубежный рынок в 201
+ 7 году Регистрация: http://deloros-ural.ru/novosti/praktikum-nesyrevoy-eksp
+ ort-v-ekaterinburge/
+LAST-MODIFIED:20170121T153525Z
+LOCATION:Антона Валека\, 13
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Деловая Россия: Практикум "Несырьевой экспорт"
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:19700101T050000
+DTEND;TZID=Asia/Yekaterinburg:19700101T050000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:90fnrt9greogvake8lgnob5knc@google.com
+CREATED:20170120T115233Z
+DESCRIPTION:
+LAST-MODIFIED:20170121T153312Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170211T160000Z
+DTEND:20170211T220000Z
+DTSTAMP:20170207T043423Z
+UID:3nm4kocjla8tg8he55pbg06494@google.com
+CREATED:20170121T153311Z
+DESCRIPTION:Ночь технотворчетсва в Технопарке "Университетский" приглашаем 
+ всех желающих увидеть\, как создаются и развиваются настоящие иннвоации Рег
+ истрация: http://uralhitech.ru
+LAST-MODIFIED:20170121T153311Z
+LOCATION:Конструкторов\, 5
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Технопарк: ТехноНочь НТИ Урал
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:20170127T100000
+DTEND;TZID=Asia/Yekaterinburg:20170127T120000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:tbnl2tiva2o0lu36tptvtno4ng@google.com
+CREATED:20170121T073246Z
+DESCRIPTION:Узнайте о трендах интернет-маркетинга в 2017 году от директора 
+ агенства интернет-маркетинга Титан-Софт Виталия Попова Регистрация: https:/
+ /shkola-biznesa-ekb.timepad.ru/event/432670/?utm_refcode=29a7414d50b4d35ae2
+ 53bdc254fd115f52ccc038%20%D0%9D%D0%BE
+LAST-MODIFIED:20170121T153303Z
+LOCATION:Novotel\, Энгельса\, 7
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:СИНЕРГИЯ: Бизнес-завтрак 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:20170126T180000
+DTEND;TZID=Asia/Yekaterinburg:20170126T200000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:tsrveh85i9mca7lp7r8fnnp26c@google.com
+CREATED:20170117T085101Z
+DESCRIPTION:Не упусти шанс получить обратную связь от опытных игроков рынка
+ ! 26 января в 18:00 – очередное заседание Клуба. Менторы рассмотрят ИТ-прое
+ кты\, дадут советы и поделятся опытом. Регистрация: https://goo.gl/ca6YNn
+LAST-MODIFIED:20170121T153302Z
+LOCATION:ЕЦРП\, Пушкина\, 9А
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:ФРИИ: Клуб менторов в Екатеринбурге
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170311T050000Z
+DTEND:20170311T133000Z
+DTSTAMP:20170207T043423Z
+UID:inkqmvahfruesj00if8ev6ho98@google.com
+CREATED:20170121T074437Z
+DESCRIPTION:Крупнейшая ежегодная конференция для стартапов\, инвесторов и и
+ нтернет-предпринимателей на Урале. Регистрация: ekbstartupday.ru
+LAST-MODIFIED:20170121T074437Z
+LOCATION:Ельцин Центр\, ул. Ельцина\, 3
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ФРИИ: Ekb Startup Day
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170408T040000Z
+DTEND:20170408T150000Z
+DTSTAMP:20170207T043423Z
+UID:oeupm81pk20gbintkt1ofqpe4k@google.com
+CREATED:20170121T073948Z
+DESCRIPTION: Регистрация: http://uralhitech.ru
+LAST-MODIFIED:20170121T073948Z
+LOCATION:Конструкторов\, 5
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Технопарк: Startup Tour
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170407T040000Z
+DTEND:20170407T150000Z
+DTSTAMP:20170207T043423Z
+UID:7knc5lfi5er28grtg66b1r46rg@google.com
+CREATED:20170121T073948Z
+DESCRIPTION: Регистрация: http://uralhitech.ru
+LAST-MODIFIED:20170121T073948Z
+LOCATION:Конструкторов\, 5
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Технопарк: Startup Tour
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170406T040000Z
+DTEND:20170406T150000Z
+DTSTAMP:20170207T043423Z
+UID:a4f9ua58fgrq2q6sd8dvdpdcec@google.com
+CREATED:20170121T073947Z
+DESCRIPTION: Регистрация: http://uralhitech.ru
+LAST-MODIFIED:20170121T073947Z
+LOCATION:Конструкторов\, 5
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Технопарк: Startup Tour
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:20170118T000000
+DTEND;TZID=Asia/Yekaterinburg:20170118T000000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:d6hcbnp32b6iridgpt8o9kmrsk@google.com
+CREATED:20170116T164033Z
+DESCRIPTION: Регистрация: 
+LAST-MODIFIED:20170117T180010Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:NONE
+TRIGGER;VALUE=DATE-TIME:19760401T005545Z
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Yekaterinburg:20170117T000000
+DTEND;TZID=Asia/Yekaterinburg:20170117T000000
+RRULE:FREQ=DAILY;COUNT=1
+DTSTAMP:20170207T043423Z
+UID:5le1a02v98tgcrpmeg7i9rqqoo@google.com
+CREATED:20170116T162801Z
+DESCRIPTION: Регистрация: 
+LAST-MODIFIED:20170117T085415Z
+LOCATION:
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20150730T140000Z
+DTEND:20150730T160000Z
+DTSTAMP:20170207T043423Z
+UID:evtgm8kh75icompeqkk9o9il1g@google.com
+CREATED:20150727T141608Z
+DESCRIPTION:
+LAST-MODIFIED:20150727T141608Z
+LOCATION:улица Пушкина 9ЕкатеринбургСвердловская область
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Клуб менторов
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20150729T140000Z
+DTEND:20150729T155000Z
+DTSTAMP:20170207T043423Z
+UID:v0iarah3nbjd73ode36a23tmmk@google.com
+CREATED:20150727T141510Z
+DESCRIPTION:
+LAST-MODIFIED:20150727T141511Z
+LOCATION:ул. Мира\, 19\, Екатеринбург\, Свердловская область\, Россия\, 620
+ 002
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Горячие ошибки IT-стартапов - мастер-класс Дмитрия Калаева
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
