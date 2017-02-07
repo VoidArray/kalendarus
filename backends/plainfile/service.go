@@ -2,6 +2,7 @@ package plainfile
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -37,6 +38,11 @@ func transform(key string) string {
 
 func (s *Service) Load(key string, vars interface{}) error {
 	c := s.config()
+
+	if !c.Enabled {
+		return errors.New("service is not enabled")
+	}
+
 	filename := filepath.Join(c.DataDir, fmt.Sprintf("%s.json", transform(key)))
 	if _, err := os.Stat(filename); err != nil {
 		return err
@@ -54,6 +60,11 @@ func (s *Service) Load(key string, vars interface{}) error {
 
 func (s *Service) Save(key string, vars interface{}) error {
 	c := s.config()
+
+	if !c.Enabled {
+		return errors.New("service is not enabled")
+	}
+
 	filename := filepath.Join(c.DataDir, fmt.Sprintf("%s.json", transform(key)))
 	keyFile, err := os.OpenFile(filename, os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0666)
 	if err != nil {
