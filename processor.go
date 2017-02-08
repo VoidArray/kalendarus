@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"sync"
 	"time"
 
 	"github.com/Sirupsen/logrus"
@@ -14,45 +15,47 @@ import (
 )
 
 type Processor struct {
-	config    Config
-	stopChan  chan bool
-	doneChan  chan bool
-	errChan   chan error
-	messenger messengers.Messenger
-	backend   backends.Backend
-	events    map[string]Event
-	saved     bool
-}
-
-type Event struct {
-	Summary           string    `json:"summary"`
-	Location          string    `json:"location"`
-	Description       string    `json:"description"`
-	StartTime         time.Time `json:"start_time"`
-	StartTimeLocal    time.Time `json:"start_time_local"`
-	EndTime           time.Time `json:"end_time"`
-	EndTimeLocal      time.Time `json:"end_time_local"`
-	ModifiedTime      time.Time `json:"modified_time"`
-	ModifiedTimeLocal time.Time `json:"modified_time_local"`
+	config     Config
+	stopChan   chan bool
+	doneChan   chan bool
+	errChan    chan error
+	messenger  messengers.Messenger
+	backend    backends.Backend
+	wg         sync.WaitGroup
+	cache      Cache
+	saved      bool
+	firstStart bool
 }
 
 func NewProcessor(config Config, stopChan, doneChan chan bool, errChan chan error, messenger messengers.Messenger, backend backends.Backend) *Processor {
 	p := &Processor{
-		config:    config,
-		stopChan:  stopChan,
-		doneChan:  doneChan,
-		errChan:   errChan,
-		messenger: messenger,
-		backend:   backend,
-		events:    make(map[string]Event),
-		saved:     true,
+		config:     config,
+		stopChan:   stopChan,
+		doneChan:   doneChan,
+		errChan:    errChan,
+		messenger:  messenger,
+		backend:    backend,
+		saved:      true,
+		firstStart: true,
 	}
+	p.cache = NewCache(config)
 	return p
 }
 
 func (p *Processor) Process() {
 	defer close(p.doneChan)
+
 	p.LoadState()
+	p.wg.Add(2)
+
+	go p.PullDaemon()
+	go p.NotifyDaemon()
+
+	p.wg.Wait()
+}
+
+func (p *Processor) PullDaemon() {
+	defer p.wg.Done()
 	for {
 		if err := p.realProcess(); err != nil {
 			p.errChan <- err
@@ -60,13 +63,68 @@ func (p *Processor) Process() {
 		select {
 		case <-p.stopChan:
 			break
-		case <-time.After(time.Duration(p.config.Interval) * time.Second):
-			if err := p.SaveState(); err != nil {
-				p.errChan <- err
-			}
+		case <-time.After(time.Duration(p.config.PullInterval) * time.Second):
 			continue
 		}
 	}
+}
+
+func (p *Processor) NotifyDaemon() {
+	defer p.wg.Done()
+	for {
+		if err := p.notifyProcess(); err != nil {
+			p.errChan <- err
+		}
+		select {
+		case <-p.stopChan:
+			break
+		case <-time.After(time.Duration(p.config.NotifyInterval) * time.Second):
+			continue
+		}
+	}
+}
+
+func (p *Processor) notifyProcess() error {
+	if len(p.cache.Events) == 0 {
+		return nil
+	}
+	cloc := time.Now().In(p.config.Location)
+	for id, e := range p.cache.Events {
+		notified := false
+		diff := e.StartTimeLocal.Sub(cloc)
+		for _, notify := range p.config.Notifications {
+			if _, ok := e.Notificators[notify.BeforeStartRaw]; !ok {
+				e.Notificators[notify.BeforeStartRaw] = false
+			}
+			if !e.Notificators[notify.BeforeStartRaw] && diff <= notify.BeforeStart {
+				if notified {
+					e.Notificators[notify.BeforeStartRaw] = true
+					p.cache.Events[id] = e
+					p.saved = false
+					logrus.Debugf("SKIP_NOTIFY [%s] %s LESS %s (%s)", e.StartTimeLocal, e.Summary, notify.BeforeStart.String(), id)
+					continue
+				}
+				notified = true
+				if !p.firstStart {
+					logrus.Infof("NOTIFY [%s] %s LESS %s (%s)", e.StartTimeLocal, e.Summary, notify.BeforeStart.String(), id)
+					err := p.messenger.Send(
+						fmt.Sprintf(p.config.NotifyTemplate, e.Summary, e.StartTimeLocal.Format(p.config.TimeFormat), e.Location, e.Description),
+					)
+					if err != nil {
+						logrus.Error(err)
+						continue
+					}
+				} else {
+					logrus.Debugf("SKIP_ON_START [%s] %s LESS %s (%s)", e.StartTimeLocal, e.Summary, notify.BeforeStart.String(), id)
+				}
+				e.Notificators[notify.BeforeStartRaw] = true
+				p.cache.Events[id] = e
+				p.saved = false
+			}
+		}
+	}
+	p.firstStart = false
+	return nil
 }
 
 func (p *Processor) realProcess() error {
@@ -78,71 +136,25 @@ func (p *Processor) realProcess() error {
 		return nil
 	}
 	for _, e := range events {
-		if e.Summary == "" || e.Status != "CONFIRMED" || e.Start == nil {
+		if !p.cache.IsActiveEvent(e) {
 			continue
 		}
-		sloc := e.Start.In(p.config.Location)
-		if time.Now().In(p.config.Location).After(sloc) {
-			continue
-		}
-		if _, ok := p.events[e.Uid]; !ok {
+		if !p.cache.HasEvent(e) {
 			p.saved = false
-			event := Event{
-				Summary:        e.Summary,
-				Location:       e.Location,
-				Description:    e.Description,
-				StartTime:      *e.Start,
-				StartTimeLocal: sloc,
-			}
-			if e.End != nil {
-				event.EndTime = *e.End
-				event.EndTimeLocal = e.End.In(p.config.Location)
-			}
-			if e.LastModified != nil {
-				event.ModifiedTime = *e.LastModified
-				event.ModifiedTimeLocal = e.LastModified.In(p.config.Location)
-			}
-			p.events[e.Uid] = event
-			p.sendMessage(event, false)
-		} else {
-			event := p.events[e.Uid]
-			if !event.ModifiedTime.Equal(*e.LastModified) && !event.StartTime.Equal(*e.Start) {
-				p.saved = false
-				event.ModifiedTime = *e.LastModified
-				event.ModifiedTimeLocal = e.LastModified.In(p.config.Location)
-				event.StartTime = *e.Start
-				event.StartTimeLocal = sloc
-				event.Summary = e.Summary
-				event.Description = e.Description
-				p.events[e.Uid] = event
-				p.sendMessage(event, true)
-			}
+			p.cache.SaveEvent(e)
+			logrus.Infof("ADDED [%s] %s", e.Start.In(p.config.Location), e.Summary)
+			continue
+		}
+		if changed, err := p.cache.IsEventChanged(e); err == nil && changed == true {
+			p.saved = false
+			p.cache.SaveEvent(e)
+			logrus.Infof("UPDATED [%s] %s", e.Start.In(p.config.Location), e.Summary)
 		}
 	}
-	if p.config.SkipFirstStart {
-		p.config.SkipFirstStart = false
-		if err := p.SaveState(); err != nil {
-			p.errChan <- err
-		}
+	if err := p.SaveState(); err != nil {
+		p.errChan <- err
 	}
 	return nil
-}
-
-func (p *Processor) sendMessage(event Event, updated bool) error {
-	if p.config.SkipFirstStart {
-		logrus.Infof("Skip sending message about %s", event.Summary)
-		return nil
-	}
-	template := p.config.AddedEventFormat
-	if updated {
-		template = p.config.UpdatedEventFormat
-		logrus.Debugf("UPD [%s] %s", event.StartTimeLocal.Format(p.config.TimeFormat), event.Summary)
-	} else {
-		logrus.Debugf("NEW [%s] %s", event.StartTimeLocal.Format(p.config.TimeFormat), event.Summary)
-	}
-	return p.messenger.Send(
-		fmt.Sprintf(template, event.Summary, event.StartTimeLocal.Format(p.config.TimeFormat), event.Location, event.Description),
-	)
 }
 
 func (p *Processor) getCalendarEvents() ([]gocal.Event, error) {
@@ -166,7 +178,7 @@ func (p *Processor) getCalendarEvents() ([]gocal.Event, error) {
 
 func (p *Processor) LoadState() error {
 	logrus.Debug("Loading state...")
-	if err := p.backend.Load("kalendarus/events", &p.events); err != nil {
+	if err := p.backend.Load("kalendarus/events/cache", &p.cache.Events); err != nil {
 		return err
 	}
 	logrus.Debug("Ok")
@@ -178,7 +190,7 @@ func (p *Processor) SaveState() error {
 		return nil
 	}
 	logrus.Debug("Saving state...")
-	if err := p.backend.Save("kalendarus/events", p.events); err != nil {
+	if err := p.backend.Save("kalendarus/events/cache", p.cache.Events); err != nil {
 		return err
 	}
 	p.saved = true
